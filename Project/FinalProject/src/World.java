@@ -61,6 +61,7 @@ public class World extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 		World world = new World();
 		world.setSize(500, 500);
+		world.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		world.setVisible(true);
 	}
 	
