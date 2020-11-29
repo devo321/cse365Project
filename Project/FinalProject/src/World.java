@@ -35,7 +35,7 @@ public class World extends JFrame implements ActionListener {
 		aboutMenu = new JMenuItem("About");
 		
 		loadRoster = new JMenuItem("Load Roster");
-		addAttendance = new JMenuItem("Add Attendace");
+		addAttendance = new JMenuItem("Add Attendance");
 		save = new JMenuItem("Save");
 		plotData = new JMenuItem("Plot Data");
 		
