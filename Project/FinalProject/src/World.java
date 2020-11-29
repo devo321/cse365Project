@@ -14,6 +14,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingUtilities;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 
@@ -60,7 +62,7 @@ public class World extends JFrame implements ActionListener {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		World world = new World();
-		world.setSize(500, 500);
+		world.setSize(550, 500);
 		world.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		world.setVisible(true);
 	}
@@ -148,6 +150,20 @@ public class World extends JFrame implements ActionListener {
 			}
 		} else if (e.getSource() == plotData) {
 			// plot data
+			if((model.getColumnCount() - 6) != 0){
+				SwingUtilities.invokeLater(() -> {
+					PlotAttendance test = new PlotAttendance("Attendance", model);
+					test.setSize(800,400);
+					test.setLocationRelativeTo(null);
+					test.setVisible(true);
+				});
+			}
+			else{
+				JFrame frame = new JFrame();
+				JOptionPane.showMessageDialog(frame, "No attendance added!","Error!", JOptionPane.ERROR_MESSAGE);
+			}
+
+			
 		}
 	}
 
