@@ -21,6 +21,15 @@ public class Source extends Observable {
 		}
 	}
 	
+	public boolean didFindAsuRite(String asuRite) {
+		for (Person p : roster) {
+			if (p.getAsuRite().compareTo(asuRite) == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public void rosterCompleted() {
 		setChanged();
 		notifyObservers();
