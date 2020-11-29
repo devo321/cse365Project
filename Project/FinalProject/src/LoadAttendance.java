@@ -50,7 +50,7 @@ public class LoadAttendance extends World {
 	    		message += "\n" + a.getAsuRite() + " connected for " + a.getTime() + " minutes.";
 	    	}
 	    }
-	    JOptionPane.showMessageDialog(this, message,"Success!", JOptionPane.ERROR_MESSAGE);
+	    JOptionPane.showMessageDialog(this, message,"Success!", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 
