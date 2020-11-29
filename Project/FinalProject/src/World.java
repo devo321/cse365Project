@@ -95,6 +95,7 @@ public class World extends JFrame implements ActionListener {
 			    }
 			    
 				table = new JTable(model);
+				table.setEnabled(false);
 				JScrollPane scrollPane = new JScrollPane(table);
 				scrollPane.setSize(500, 500);
 				add(scrollPane);
