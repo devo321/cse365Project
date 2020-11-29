@@ -1,5 +1,3 @@
-import javafx.beans.InvalidationListener;
-
 import java.util.ArrayList;
 import java.util.Observable;
 
