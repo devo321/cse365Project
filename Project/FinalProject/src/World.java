@@ -70,7 +70,7 @@ public class World extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == aboutMenu) {
-			JOptionPane.showMessageDialog(this, "CSE360 Final Project\nNash Schultz\nDeven Pile\nDhruv Koulgi\nAshwin Ashok\n");
+			JOptionPane.showMessageDialog(this, "CSE360 Final Project\nNash Schultz\nDeven Pile\nDhruv Koulgi\nAshwin Ashok\nDavid Partida\n");
 		} else if (e.getSource() == loadRoster) {
 			// load the roster csv
 			LoadRoster loadRoster = new LoadRoster();
